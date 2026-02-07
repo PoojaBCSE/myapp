@@ -6,3 +6,9 @@ test("renders heading", () => {
   const text = screen.getByText("Hello DevOps");
   expect(text).toBeInTheDocument();
 });
+
+test("renders subheading", () => {
+  render(<App />);
+  const subText = screen.getByText("Welcome to Jenkins CI/CD!");
+  expect(subText).toBeInTheDocument();
+});
